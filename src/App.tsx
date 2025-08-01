@@ -1,16 +1,28 @@
-
+import { useDispatch } from "react-redux";
+import { decrement, increment } from "./redux/features/counter/counterSlice";
 
 function App() {
+  const dispatch = useDispatch();
 
+  const handleIncrement = () => {
+    dispatch(increment());
+  };
+  const handleDecrement = () => {
+    dispatch(decrement());
+  };
 
   return (
-<div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-4">Counter with Redux</h1>
-      <button className="btn btn-secondary">Increment</button>
+      <button onClick={handleIncrement} className="btn btn-secondary">
+        Increment
+      </button>
       <div className="font-bold mt-2 text-2xl">0</div>
-      <button className="btn btn-warning">decrement</button>
+      <button onClick={handleDecrement} className="btn btn-warning">
+        decrement
+      </button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
