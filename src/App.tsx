@@ -123,6 +123,9 @@ function App() {
       <div className="absolute bottom-10 right-10 w-32 h-32 bg-secondary/10 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute top-1/2 left-5 w-16 h-16 bg-accent/10 rounded-full blur-xl animate-pulse"></div>
     </div>
+
+
+
   );
 }
 
