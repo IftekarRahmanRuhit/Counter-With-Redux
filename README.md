@@ -1,4 +1,4 @@
-# 🚀 Professional Redux Counter
+# 🚀 Redux Counter
 
 A modern, professional counter application built with React, Redux Toolkit, and TypeScript. Features a stunning dark-themed UI with glass morphism effects, smooth animations, and comprehensive state management.
 
